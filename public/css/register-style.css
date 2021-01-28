@@ -1,0 +1,413 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Etiquetas generales por orden de aparición con sus respectivos hovers*/
+
+body{
+    font-family: 'Roboto';
+    color: #03264C;
+    background-color: #ebebeb;
+    margin:0;
+    padding:0;
+}
+
+header{
+    font-size: 0.75em;
+    width:100%;
+    margin: 0;
+    padding: 1.5em;
+    background-color:#EAC926;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0em;
+   
+}
+
+li{
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color:#03264C;
+}
+
+p{
+    font-size: 0.75em;
+}
+
+main{
+    background-color: #ebebeb;
+    widows: 90%;
+    margin:auto;
+}
+
+form{
+    width:100%;
+}
+
+
+footer{
+    background-color: white;
+    text-align: center;
+    width:100%;
+    padding:0.625em;
+    padding-top:4.3em;
+    margin-top: 1.25em;
+}
+
+/*Clases por orden de aparición con sus respectivos hovers y animaciones*/
+
+.main-header{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding-bottom:0.5em;
+}
+
+.logo{
+    margin: 0;
+    width:50%;
+    max-width: 50%;
+}
+
+.cuotas{
+    margin:0;
+    text-align:center;
+    width:100%;
+    padding-top:1.625em;
+}
+
+.escondido-en-mobile{
+    display:none;
+}
+
+.burger-menu{
+    text-align: center;
+    background-color: #EAC926;
+    margin-bottom: 0;
+    padding-top:2em;
+    padding-bottom:0.5em;
+}
+
+.fa-bars:before {
+    content: "\f0c9";
+    background-color:#0047af;
+    padding: 0.3em 0.4em;
+    border-radius: 0.083em;
+}
+
+.contenedor-input{
+    width:90%;
+    margin:1em auto;
+}
+
+.text-input{
+    width:100%;
+    border-radius: 0.25em;
+    border: none;
+    padding:0.75em;
+    margin:0.625em auto;
+    color: #666666;
+}
+
+.radius-options{
+    margin:1.25em;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenedor-perfil-comprador{
+    margin: 1em auto;
+    width:90%;
+}
+
+.main-label{
+    font-weight: bold;
+    color:#3a3a3a;
+    width:100%;
+}
+
+[type="checkbox"], [type="radio"] {
+    margin-right:0.625em;
+}
+
+.contenedor-intereses{
+    margin:1.5625em auto;
+    width:90%;
+}
+
+.checkbox-options{
+    margin:1.25em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.option-intereses{
+    margin:0.625em;
+}
+
+.contenedor-button{
+    width:90%;
+    margin:0.625em auto;
+}
+
+
+.contenedor-seccion-footer{
+    padding-left: 2.75em;
+    padding-right: 2.75em;
+    margin-bottom: 3.75em;
+}
+
+.titulo-footer{
+    color: #666666;
+    font-size: 1.1em;
+    margin:0;
+}
+
+.parrafo-footer{
+    color:#666666;
+    margin:0.1em;
+}
+
+/*ID's por orden de aparición*/
+
+#header-en-amarillo{
+    background-color: #EAC926;
+    width: 100%;
+}
+
+#logo{
+    width: 30%;
+    min-width: 150px;
+}
+
+#barra-búsqueda{
+    margin:0;
+}
+
+#burger-menu{
+    color:white;
+    background-color:transparent;
+    font-size: 2em;
+    margin:auto;
+}
+
+#escondido-en-tablet {
+    margin:0;
+   
+}
+
+#titulos-gris{
+    color:#666666;
+    background-color: #ebebeb;
+    text-align:center;
+}
+
+#perfil-vendedor{
+    margin-left:2.5em;
+}
+
+#foto-perfil-subir{
+    width:100%;
+    border-radius: 0.25em;
+    border: none;
+    margin:1.25em auto;
+    color: #666666
+}
+
+#contenedor-contraseña{
+    width:100%;
+    border-radius: 0.25em;
+    border: none;
+    padding:0.75em;
+    margin:0.625em auto;
+    color: #666666
+
+}
+
+#boton-enviar{
+    background-color:#0047af;
+    color: #ffffff;
+    border-color: transparent;
+    width:100%;
+    padding:0.625em;
+    border-radius: 0.25em;
+    display: block;
+    margin: auto;
+}
+
+#boton-enviar:hover{
+    background-color:  #0022AA;
+}
+
+#boton-reset{
+    background-color:#4986e0;
+    color: white;
+    border-color: transparent;
+    width:100%;
+    padding:0.625em;
+    border-radius: 0.25em;
+    display: block;
+    margin: auto;
+    margin-bottom:5em;
+
+}
+
+#boton-reset:hover{
+    background-color:  #24539b;
+}
+
+#texto-cuotas{
+    text-align: center;
+    font-size: 1em;
+    margin:0;
+}
+
+#icon-hand{
+    color: #03264C;
+}
+
+#icons-footer{
+    font-size: 2em;
+    color: #0047af;
+    margin-bottom: 0.625em;
+}
+
+#icons-footer:hover{
+    color: #3d7ad6;
+}
+
+#last-section-footer{
+    padding-bottom:1.25em;
+    margin-bottom: 2em;
+}
+
+#copyright-final{
+    text-align: left;
+    color: #666666;
+}
+
+
+
+/*Media query para tablet, mismo orden, primero etiquetas generales, luego clases y después ID's por orden de aparición*/
+
+@media(min-width: 568px){
+
+    ul{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: 0;
+    }
+
+    li{
+        margin-right:1.2em;
+    }
+
+    .escondido-en-mobile{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .main-header{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        padding-bottom:0.5em;
+    }
+
+    .logo{
+        margin: 0;
+        max-width:30%;
+        min-width: 200px;
+    }
+
+    .barra-navegacion{
+        width:30%;
+        margin:0;
+    }
+    
+    .cuotas{
+        margin:0;
+        max-width:30%;
+        padding:0;
+    }
+
+    .contenedor-input, .contenedor-perfil-comprador, .contenedor-intereses, .contenedor-button{
+        margin:0.625em auto;
+        max-width: 30.4375em;
+    }
+    
+    .parrafo-footer{
+        max-width:40%;
+        margin:auto;
+    }
+
+    #escondido-en-tablet {
+        display:none;
+       
+    }
+
+    #barra-búsqueda{
+        margin: 0;
+        text-align: center;
+    }
+
+    #texto-cuotas{
+        margin:0;
+    }
+    
+
+}
+
+/*Media query para Desktop*/
+
+@media(min-width: 837px){
+
+    .contenedor-input, .contenedor-perfil-comprador, .contenedor-intereses, .contenedor-button{
+        margin:0.625em auto;
+        max-width: 30.4375em;
+    }
+    
+    .contenedor-button{
+        max-width:30.4375em;
+    }
+
+    .contenedor-principal-footer{
+        display:flex;
+        flex-wrap:nowrap;
+        flex-direction:row;
+        justify-content: space-around;
+        margin: auto;
+        max-width:90%;
+    }
+
+    .parrafo-footer{
+        max-width:100%;
+    }
+
+    #header-en-amarillo{
+        max-width: 80%;
+        margin:auto;
+    }
+
+    #copyright-final{
+        padding-left: 1.25em;
+    }
+
+}

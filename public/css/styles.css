@@ -1,0 +1,449 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Etiquetas generales por orden de aparición con sus respectivos hovers*/
+
+body{
+    font-family: 'Roboto';
+    color: #03264C;
+    background-color: #ebebeb;
+    margin:0;
+    padding:0;
+}
+
+header{
+    font-size: 0.75em;
+    width:100%;
+    margin: 0;
+    padding: 1.5em;
+    background-color:#EAC926;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0em;
+   
+}
+
+li{
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color:#03264C;
+}
+
+p{
+    font-size: 0.75em;
+}
+
+main{
+    background-color: #ebebeb;
+    widows: 90%;
+    margin:auto;
+}
+
+article{
+    width:90%;
+    margin:auto;
+    margin-bottom: 0.625em;
+    background-color: white;
+    transition: box-shadow 450ms;
+}
+
+
+article:hover{
+    box-shadow: 0em 0em 0.875em 0em rgb(194, 192, 192);
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    width:100%;
+    padding:0.625em;
+    padding-top:4.3em;
+    margin-top: 1.25em;
+}
+
+/*Clases por orden de aparición con sus respectivos hovers y animaciones*/
+
+.main-header{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding-bottom:0.5em;
+}
+
+.logo{
+    margin: 0;
+    width:50%;
+    max-width: 50%;
+}
+
+.cuotas{
+    margin:0;
+    text-align:center;
+    padding-top:1.625em;
+    width:100%;
+}
+
+.escondido-en-mobile{
+    display:none;
+}
+
+.burger-menu{
+    text-align: center;
+    background-color: #EAC926;
+    margin-bottom: 0;
+    padding-top:2em;
+    padding-bottom:0.5em;
+}
+
+.fa-bars:before {
+    content: "\f0c9";
+    background-color:#0047af;
+    padding: 0.3em 0.4em;
+    border-radius: 0.083em;
+}
+
+.banner-home{
+    margin:0;
+    background-size:  cover;
+}
+
+.img-banner{
+    width:100vw;
+}
+
+.contenedor-input{
+    width:90%;
+    margin:auto;
+}
+
+.text-input{
+    width:100%;
+    border-radius: 0.25em;
+    border: none;
+    padding:0.75em;
+    margin:0.625em auto;
+    color: #666666;
+}
+
+.contenedor-productos-0{
+    background-color:#ebebeb;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-items: center ;
+}
+
+.imagen-producto{
+    padding:0.9375em;
+    width:100%;
+}
+
+.descripcion-producto{
+    border-top: solid 0.083em #ebebeb;
+    background-color: white;
+    padding-top:1.875em;
+    width:100%;
+}
+
+.contenedor-descripcion{
+    padding:0.5em 1em;
+}
+
+.titulates{
+    font-size: 1.5em;
+    columns: #666666;
+}
+
+.precio-y-descuento{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    margin:0;
+    padding-top:1.25em;
+}
+
+.precio{
+  font-size: 1.7em;
+  flex-grow:0.07;
+  margin:0;
+}
+
+.descuento{
+    font-size: 1em;
+    color:#00b638;
+    flex-grow:0.93;
+    margin:0;
+}
+
+.descripcion{
+    font-size: 1em;
+    opacity: 0;
+    transition: opacity 450ms;
+}
+
+.descripcion:hover{
+    opacity:1;
+}
+
+.fa-truck:before {
+    font-size: 1em;
+    color: #00b638;
+    width:1.875em;
+    height:1.875em;
+    border-image: solid 0.8em;
+    border: solid 0.0625em;
+    padding: 0.5em;
+    border-radius:50%;
+}
+
+.fa-truck:hover{
+    animation-name: spin;
+    animation-duration:1000ms;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotateY(0deg)
+    }
+
+    100%{
+        transform: rotateY(360deg)
+    }
+}
+
+.contenedor-seccion-footer{
+    padding-left: 2.75em;
+    padding-right: 2.75em;
+    margin-bottom: 3.75em;
+}
+
+.titulo-footer{
+    color: #666666;
+    font-size: 1.1em;
+    margin:0;
+}
+
+.parrafo-footer{
+    color:#666666;
+    margin:0.1em;
+}
+
+/*ID's por orden de aparición*/
+
+
+#header-en-amarillo{
+    background-color: #EAC926;
+    width: 100%;
+}
+
+#logo{
+    width: 30%;
+    min-width: 150px;
+}
+
+#barra-búsqueda{
+    margin:0;
+}
+
+#burger-menu{
+    color:white;
+    background-color:transparent;
+    font-size: 2em;
+    margin:auto;
+}
+
+#escondido-en-tablet {
+    margin:0;
+   
+}
+
+#titulos-gris{
+    color:#666666;
+    background-color: #ebebeb;
+    padding-left: 0.6em;
+}
+
+#texto-cuotas{
+    text-align: center;
+    font-size: 1em;
+    margin:0;
+}
+
+#icon-hand{
+    color: #03264C;
+}
+
+#icons-footer{
+    font-size: 2em;
+    color: #0047af;
+    margin-bottom: 0.625em;
+}
+
+#icons-footer:hover{
+    color: #3d7ad6;
+}
+
+#last-section-footer{
+    padding-bottom:1.25em;
+    margin-bottom: 2em;
+}
+
+#copyright-final{
+    text-align: left;
+    color: #666666;
+}
+
+/*Media query para tablet, mismo orden, primero etiquetas generales, luego clases y después ID's por orden de aparición*/
+
+
+@media(min-width: 568px){
+
+    ul{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: 0;
+    }
+
+    li{
+        margin-right:1.2em;
+    }
+
+    article{
+        width:48%;
+        align-items:stretch;
+    }
+
+    .escondido-en-mobile{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .main-header{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+        padding-bottom:0.5em;
+    }
+
+    .logo{
+        margin: 0;
+        width:30%;
+        min-width: 200px;
+    }
+
+    .barra-navegacion{
+       width:30%;
+        margin:0;
+    }
+    
+    .cuotas{
+        margin:0;
+        width:30%;
+        padding:0;
+    }
+
+    .titulates{
+        margin:1.2035em auto;
+        width:90%;
+    }
+
+    .contenedor-productos-0{
+        width:90%;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .parrafo-footer{
+        max-width:40%;
+        margin:auto;
+    }
+
+    #escondido-en-tablet {
+        display:none;
+       
+    }
+
+    #barra-búsqueda{
+        margin: 0;
+        text-align: center;
+    }
+
+    #texto-cuotas{
+        margin:0;
+    }
+
+}
+
+/*Media query para Desktop*/
+
+@media(min-width: 837px){
+
+    article{
+        width:24%;
+        align-items:center;
+    }
+
+    .main-header{
+        width:100%;
+    }
+
+    .titulates{
+        margin:1.2035em auto;
+        width:90%;
+    }
+
+    .contenedor-productos-0{
+        width:90%;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .contenedor-principal-footer{
+        display:flex;
+        flex-wrap:nowrap;
+        flex-direction:row;
+        justify-content: space-around;
+        margin: auto;
+        max-width:90%;
+    }
+
+    .parrafo-footer{
+        max-width:100%;
+    }
+    
+    #header-en-amarillo{
+        width: 95%;
+        margin:auto;
+    }
+
+    #copyright-final{
+        padding-left: 1.25em;
+    }
+}
